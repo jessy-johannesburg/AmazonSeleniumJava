@@ -1,0 +1,19 @@
+{
+  "default": {
+    "requireModule": ["ts-node/register"],
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "require": [
+      "src/test/steps/*.ts",
+      "src/hooks/hooks.ts"
+    ],
+    "paths": [
+      "src/test/features/*.feature"
+    ],
+    "format": [
+      "json:test-results/web/cucumber-report.json",
+      "html:test-results/web/cucumber-report.html"
+    ]
+  }
+}
