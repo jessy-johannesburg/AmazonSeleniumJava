@@ -6,10 +6,11 @@
     },
     "require": [
       "src/test/steps/*.ts",
-      "src/hooks/hooks.ts"
+      "src/hooks/*.ts"
+      
     ],
     "paths": [
-      "src/test/features/*.feature"
+      "src/test/features/**/*.feature"
     ],
     "format": [
       "json:test-results/web/cucumber-report.json",

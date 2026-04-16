@@ -4,134 +4,95 @@
     "elements": [
       {
         "description": "",
-        "id": "2023-las-vegas-grand-prix-results;validate-top-3-finishers-in-the-results-table",
+        "id": "launch-amazon-website;launch-amazon-and-verify-text",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "Validate top 3 finishers in the results table",
+        "line": 4,
+        "name": "Launch amazon and verify text",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2736395999
+              "duration": 1320203900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "As a BBC editor launched the BBC Sport homepage",
+            "name": "I opened amazon website",
             "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:5"
+              "location": "src\\test\\steps\\amazonSteps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 166289800
+              "duration": 787263399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I verify update location text",
+            "match": {
+              "location": "src\\test\\steps\\amazonSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2574218199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on Everyday essentials",
+            "match": {
+              "location": "src\\test\\steps\\amazonSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 990273999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be able to see Grocery",
+            "match": {
+              "location": "src\\test\\steps\\amazonSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 471332500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 9,
-            "name": "I clicked on Formula 1",
+            "name": "I click on Grocery",
             "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:12"
+              "location": "src\\test\\steps\\amazonSteps.ts:30"
             },
             "result": {
               "status": "passed",
-              "duration": 110450799
+              "duration": 743860099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I should be navigated to formula1 page",
+            "name": "I should be able to see Grocery page",
             "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:16"
+              "location": "src\\test\\steps\\amazonSteps.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 2032400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I clicked on Results option",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 929974299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I should be navigated to Results page",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1096500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I selected the year",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 192852799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should see Max Verstappen in first place",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 82527399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I should see Charles Leclerc in second place",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28742500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "I should see George Russell in third place",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 72197799
+              "duration": 444764299
             }
           },
           {
@@ -139,147 +100,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 313284000
+              "duration": 603814899
             }
           }
         ],
         "tags": [
           {
-            "name": "@BBCFeature",
+            "name": "@amazon",
             "line": 1
-          },
-          {
-            "name": "@racerPositions",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "2023-las-vegas-grand-prix-results;retrieve-search-results",
-        "keyword": "Scenario",
-        "line": 28,
-        "name": "Retrieve search results",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1167564800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "As a BBC editor launched the BBC Sport homepage",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 956778300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "I clicked on search box",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 325852300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "I should see serach input box",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38826800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "I entered \"Sport in 2023\" as Sport in 2023 into the search bar",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24737300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "I submitted the search",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 139930200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "I should see at least 4 relevant search results",
-            "match": {
-              "location": "src\\test\\steps\\grandprixSteps.ts:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 109462600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 414194400
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@BBCFeature",
-            "line": 1
-          },
-          {
-            "name": "@searchResults",
-            "line": 18
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "2023-las-vegas-grand-prix-results",
+    "id": "launch-amazon-website",
     "line": 2,
     "keyword": "Feature",
-    "name": "2023 Las Vegas Grand Prix Results",
+    "name": "Launch Amazon website",
     "tags": [
       {
-        "name": "@BBCFeature",
+        "name": "@amazon",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\grandprix.feature"
+    "uri": "src\\test\\features\\amazon.feature"
   }
 ]

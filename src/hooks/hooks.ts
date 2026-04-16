@@ -8,7 +8,7 @@ Before(async function () {
   browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   page = await context.newPage();
-   await page.goto('https://www.bbc.com/sport', { waitUntil: 'load', timeout: 60000 });
+  await page.goto('https://www.bbc.com/sport', { waitUntil: 'load', timeout: 60000 });
   this.page = page;
 });
 
