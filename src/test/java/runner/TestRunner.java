@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         (
                 features = {"src/test/java/features"},
                 glue = {"stepDefinitions"},
-                tags = "@abcd",
+                tags = "@amazon",
                 dryRun = false,
                 monochrome = true,
                 plugin = {"pretty", "html:target/test_output/cucumber.html", "json:target/test_output/cucumber.json",

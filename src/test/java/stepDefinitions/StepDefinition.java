@@ -64,5 +64,6 @@ public class StepDefinition extends Base {
       objectsPage.verifyThirdPosition();
     }
 
+
 }
 
