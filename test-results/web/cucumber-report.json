@@ -6,7 +6,7 @@
         "description": "",
         "id": "launch-amazon-website;launch-amazon-and-verify-text",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 6,
         "name": "Launch amazon and verify text",
         "steps": [
           {
@@ -14,137 +14,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 847763700
+              "duration": 707725500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "I opened amazon website",
             "match": {
               "location": "src\\test\\steps\\amazonWebsiteSteps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 832342000
+              "duration": 832496299
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
+            "line": 7,
             "name": "I verify update location text",
             "match": {
               "location": "src\\test\\steps\\amazonWebsiteSteps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1484186600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I click on Everyday essentials",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1172177999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I should be able to see Grocery",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 840575600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I click on Grocery",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1022234999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I should be able to see Grocery page",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1368691000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I select the product",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 624867200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I should be navigated to product details page",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28173499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I click on add to cart button",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1867199199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should be able to see the product in cart",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14098600
+              "duration": 1567498499
             }
           },
           {
@@ -152,7 +48,195 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 397899
+              "duration": 585399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@amazon",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "launch-amazon-website;navigate-to-grocery-and-add-product-to-cart",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Navigate to grocery and add product to cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1043463899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I opened amazon website",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 980627300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click on Everyday essentials",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2791804800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should be able to see Groceries",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 970284099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click on Groceries",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 601756299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be navigated to Grocery page",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 900284200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I select the product",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 822362600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should be navigated to product details page",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36564099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click on add to cart button",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1330641600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should be able to see the product in cart",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8201699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I verify the product price is \"29\"",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 850831000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click on Proceed to checkout button",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 711675799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should be navigated to sign in page",
+            "match": {
+              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28380300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77799
             }
           }
         ],
