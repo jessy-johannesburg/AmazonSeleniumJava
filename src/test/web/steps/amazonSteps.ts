@@ -1,8 +1,6 @@
 import { Given,When, Then } from '@cucumber/cucumber';
 import { expect,Page } from '@playwright/test';
 
-
-
 Given('I opened amazon website', async function () {
   await this.page.goto('https://www.amazon.co.za/');
 });
@@ -56,13 +54,11 @@ Then('I should be able to see the product in cart', async function (){
   expect(img).toBeVisible({ timeout: 20000 });
 });
 
-
-
 Then('I verify the product price is {string}', async function(expectedPrice) {
 const actualPrice = await this.page
     .locator("(//span[@class='a-price-whole'])[1]")
     .textContent();
-  console.log("Actual Price: " + actualPrice);
+  // console.log("Actual Price: " + actualPrice);
   expect(actualPrice).toContain(expectedPrice);
 });
 

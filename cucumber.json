@@ -5,12 +5,14 @@
       "snippetInterface": "async-await"
     },
     "require": [
-      "src/test/steps/*.ts",
+      "src/test/web/steps/*.ts",
+      "src/test/api/api/steps/*.ts",
       "src/hooks/*.ts"
       
     ],
     "paths": [
-      "src/test/features/**/*.feature"
+      "src/test/web/features/**/*.feature",
+      "src/test/api/api/features/**/*.feature"
     ],
     "format": [
       "json:test-results/web/cucumber-report.json",

@@ -4,231 +4,95 @@
     "elements": [
       {
         "description": "",
-        "id": "launch-amazon-website;launch-amazon-and-verify-text",
+        "id": "verify-user-details-from-json-placeholder-api;get-user-details",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Launch amazon and verify text",
+        "line": 4,
+        "name": "Get user details",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 707725500
+              "duration": 1639028399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "I opened amazon website",
+            "line": 5,
+            "name": "I hit the api endpoint",
             "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:6"
+              "location": "src\\test\\api\\api\\steps\\userPlacceholderSteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 832496299
+              "duration": 262911699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should receive a response with status code 200",
+            "match": {
+              "location": "src\\test\\api\\api\\steps\\userPlacceholderSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3731899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I verify update location text",
+            "name": "I should see the user id",
             "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:10"
+              "location": "src\\test\\api\\api\\steps\\userPlacceholderSteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1567498499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 585399
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@amazon",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "launch-amazon-website;navigate-to-grocery-and-add-product-to-cart",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Navigate to grocery and add product to cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1043463899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I opened amazon website",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 980627300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "I click on Everyday essentials",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2791804800
+              "duration": 5416000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "I should be able to see Groceries",
+            "line": 8,
+            "name": "I should see the user name",
             "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:23"
+              "location": "src\\test\\api\\api\\steps\\userPlacceholderSteps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 970284099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "I click on Groceries",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 601756299
+              "duration": 4038599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
-            "name": "I should be navigated to Grocery page",
+            "line": 9,
+            "name": "I should see the user email",
             "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:33"
+              "location": "src\\test\\api\\api\\steps\\userPlacceholderSteps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 900284200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I select the product",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 822362600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I should be navigated to product details page",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36564099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "I click on add to cart button",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1330641600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "I should be able to see the product in cart",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8201699
+              "duration": 3892499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "I verify the product price is \"29\"",
+            "line": 10,
+            "name": "I should see the user address",
             "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:61"
+              "location": "src\\test\\api\\api\\steps\\userPlacceholderSteps.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 850831000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I click on Proceed to checkout button",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 711675799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I should be navigated to sign in page",
-            "match": {
-              "location": "src\\test\\steps\\amazonWebsiteSteps.ts:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28380300
+              "duration": 4317100
             }
           },
           {
@@ -236,29 +100,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 77799
+              "duration": 344199
             }
           }
         ],
         "tags": [
           {
-            "name": "@amazon",
+            "name": "@userapi",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "launch-amazon-website",
+    "id": "verify-user-details-from-json-placeholder-api",
     "line": 2,
     "keyword": "Feature",
-    "name": "Launch Amazon website",
+    "name": "Verify user details from JSON Placeholder API",
     "tags": [
       {
-        "name": "@amazon",
+        "name": "@userapi",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\amazonWebsite.feature"
+    "uri": "src\\test\\api\\api\\features\\userPlaceholder.feature"
   }
 ]

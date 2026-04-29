@@ -1,6 +1,6 @@
 import { Given,When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { GrandPrixPage } from '../../pages/grandprixpage';
+import { GrandPrixPage } from '../../../pages/grandprixpage';
 
 Given('As a BBC editor launched the BBC Sport homepage', async function (){
   const page = this.page;

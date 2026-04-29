@@ -2,7 +2,6 @@
 Feature: Launch Amazon website
 Background: 
 Given I opened amazon website
-
 Scenario: Launch amazon and verify text
 Then I verify update location text
 
